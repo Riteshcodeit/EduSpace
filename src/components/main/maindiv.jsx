@@ -1,7 +1,12 @@
+import React from 'react';
+import { useNavigate } from 'react-router-dom';
 import background from "./background.png"
+import Header from '../header/header';
 
 export default function Maindiv(){
-    return <>
+  const navigate = useNavigate();
+  return <>
+  <Header/>
     <main className=" h-auto md:h-[40rem] w-full rounded-md relative overflow-hidden mx-auto flex justify-center items-center">
       <div className="p-4 px-14 ">
         <span className="border rounded border-white py-3 px-5 mb-4 inline-block">
@@ -13,7 +18,7 @@ export default function Maindiv(){
         <p className="font-normal font-semibold text-base md:text-lg text-neutral-300 mx-auto">
         Connect students and teachers, share lectures, collaborate in communities, and enhance the learning experience.
         </p>
-        <button
+        <button onClick={() => navigate('/signup')}
           className="mt-7 px-8 py-3 rounded-full bg-gradient-to-b from-neutral-200 to-purple-900 text-white focus:ring-2 focus:ring-purple-400 hover:shadow-xl transition duration-200"
         >
           Get started now

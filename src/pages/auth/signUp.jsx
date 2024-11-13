@@ -39,33 +39,7 @@ export default function Signup() {
   );
 }
 
-// import React, { useState } from 'react';
-// import { useAuth } from '../../hooks/useAuth';
 
-// const Signup = () => {
-//   const { signup } = useAuth();
-//   const [formData, setFormData] = useState({ name: '', email: '', password: '', role: 'student' });
 
-//   const handleSubmit = async (e) => {
-//     e.preventDefault();
-//     await signup(formData);
-//   };
 
-//   return (
-//     <div>
-//       <h1>Sign Up</h1>
-//       <form onSubmit={handleSubmit}>
-//         <input type="text" placeholder="Name" onChange={(e) => setFormData({ ...formData, name: e.target.value })} />
-//         <input type="email" placeholder="Email" onChange={(e) => setFormData({ ...formData, email: e.target.value })} />
-//         <input type="password" placeholder="Password" onChange={(e) => setFormData({ ...formData, password: e.target.value })} />
-//         <select onChange={(e) => setFormData({ ...formData, role: e.target.value })}>
-//           <option value="student">Student</option>
-//           <option value="teacher">Teacher</option>
-//         </select>
-//         <button type="submit">Sign Up</button>
-//       </form>
-//     </div>
-//   );
-// };
 
-// export default Signup;
